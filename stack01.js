@@ -1,7 +1,9 @@
+// 나의 풀이 + 피드백
+
 function solution(s) {
   const stack = [];
 
-  for (let c of s) {
+  for (const c of s) {
     if (c === "(") { // opener
       stack.push(c);
     } else { // closer
@@ -12,7 +14,7 @@ function solution(s) {
       }
     }
   }
-  return stack.length === 0 ? true : false; // 스택이 비워지면 true
+  return stack.length === 0  // 스택이 비워지면 true
 }
 
 console.log(solution("(()("));
